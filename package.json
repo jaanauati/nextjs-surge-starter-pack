@@ -9,7 +9,7 @@
     "export": "next build && next export -o dist",
     "start": "next start",
     "serve": "npm run export && serve ./dist",
-    "deploy": "npm run export && npx surge --domain `cat SURGE_SUBDOMAIN` dist"
+    "deploy": "npm run export && npx surge --domain `cat CNAME` dist"
   },
   "author": "Jonatan Anauati",
   "license": "ISC",
